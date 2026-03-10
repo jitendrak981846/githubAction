@@ -1,21 +1,24 @@
----
 name: Hello Workflow
+
 on:
   push:
     branches:
       - main
+
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello to Vikas12
         run: echo "Hello Vikas"
+
       - name: Hello to Vikas
-        run: echo "Hello $Vikas"
+        run: echo "Hello $USER"
 
-    Details:
-        run-on: ubuntu-latest
-
-     steps:
-         -name: what is the version of python, docker, etc
-         run: docker --version & python --version
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check versions of Docker and Python
+        run: |
+          docker --version
+          python --version
