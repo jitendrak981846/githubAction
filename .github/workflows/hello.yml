@@ -8,7 +8,7 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello to user
+      - name: Say hello to Vikas
         run: echo "Hello Dosto"
-      - name: Hello to username
+      - name: Hello to Vikas
         run: echo "Hello $USER"
